@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="32dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="8dp"
+        android:text="Convert Nilai"
+        android:textSize="12pt" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="128dp"
+        android:src="@drawable/buku" />
+
+    <LinearLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <EditText
+            android:id="@+id/ET_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama" />
+
+        <EditText
+            android:id="@+id/ET_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NIM" />
+
+        <EditText
+            android:id="@+id/ET_nilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nilai"
+            android:visibility="visible" />
+
+        <Button
+            android:id="@+id/Btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="8dp"
+            android:text="Submit"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/TV_tnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingVertical="8dp"
+            android:text="Nama   :" />
+
+        <TextView
+            android:id="@+id/TV_vnama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/TV_tnama"
+            android:paddingVertical="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TV_tnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_tnama"
+            android:paddingVertical="8dp"
+            android:text="NIM      :" />
+
+        <TextView
+            android:id="@+id/TV_vnim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_tnama"
+            android:layout_toRightOf="@+id/TV_tnim"
+            android:paddingVertical="8dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/TV_tnilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TV_tnim"
+            android:paddingVertical="8dp"
+            android:text="Nilai      :" />
+
+        <TextView
+            android:id="@+id/TV_vnilai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV_tnim"
+            android:layout_toRightOf="@+id/TV_tnama"
+            android:paddingVertical="8dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

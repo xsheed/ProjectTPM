@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/sport_ico"
+        android:icon="@drawable/sport_icon"
+        android:title="Sport List"
+        />
+    <item
+        android:id="@+id/note_ico"
+        android:icon="@drawable/note_icon"
+        android:title="Note List" />
+</menu>
